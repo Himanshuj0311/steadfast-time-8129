@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       #navbar{
+            overflow: hidden;
+        }
+        #navbar {
+        
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            background-color: #FAFAFA;
+            width: 100%;
+            position: fixed;
+            top:0;
+            padding-top: 0%;
+            align-items: center;
+        }
+        #navbar img{
+         width: 15%;
+         border-radius: 50px;
+         margin-left: 20px;
+        }
+        #navbar a{
+         color: black;
+         margin-right: 20px;
+        }
+
+
+       
+     #search{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        padding-top: 60px;
+        align-items: center;
+        margin-top: 80px;
+        
+     }
+     #search input{
+       
+        padding: 5px;
+       
+        width: 40%;
+        border-radius: 30px;
+        text-align:left;
+        font-size: 13px;
+        align-items: center;
+        margin-top: 60px;
+      
+        
+              
+              color: rgb(194, 188, 188);
+              background-color: white;
+            border: none;
+     }
+     #buttuncont{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+     }
+     .botton1{
+        height: 4rem;
+        font-size: 18px;
+        color: rgb(3, 62, 3);
+        border-color: rgb(3, 62, 3);
+         border: 1px solid ;
+         border-radius: 5px;
+     }
+     #botton2{
+        width: 316.5%;
+        height: 4rem;
+        font-size: 18px;
+        color: rgb(3, 62, 3);
+        border-color: rgb(3, 62, 3);
+         border: 1px solid ;
+         border-radius: 5px;
+     }
+     #botton2:hover{
+        background-color:  rgb(52, 90, 52);
+        color: white;
+        cursor: pointer;
+     }
+     .botton1:hover{
+        background-color: rgb(52, 90, 52);
+        color: white;
+        cursor: pointer;
+     }
+     .child{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        height: 50px;
+        width: 100%;
+        margin: auto;
+        margin-left: 60px;
+        margin-top: 60px;
+        gap: 150px;
+        
+       
+       
+     }
+     .child a{
+        color: rgb(112, 107, 107);
+        text-decoration: none;
+        font-size: 20px;
+        /* border-bottom: 1px solid rgb(112, 107, 107);padding: 20px; */
+        margin-left: -100px;
+        padding: 0 50px;
+
+       
+     }
+  #Promotedarticles{
+    width: 80%;
+    margin: auto;
+    
+  }
+  .ancunl{
+    border-bottom: 1px solid rgb(52, 90, 52)
+  }
+ 
+    
+   </style>
+</head>
+<body>
+
+   <div id="navbar">
+      <div>
+          <a href="">
+              <img src="GET.png" alt="">
+          </a>
+      </div>
+      <div>
+          <a href="">Submit a request</a>
+          <a href="singup.html">
+              Sign in
+          </a>
+      </div>
+     </div>  
+    <div id="search" style="background-image: url('pexels-ella-olsson-1640777.png');">
+        
+      
+        
+        
+        <input type="text" placeholder="Search">
+        </div>
+        <div id="buttuncont">
+            <button class="botton1">What is Get Meal?</button>
+            <button class="botton1">How Does Your Service Work?</button>
+            <button class="botton1">Meal Plans & Pricing</button>
+
+           
+            <button class="botton1">About the Meals</button>
+            <button class="botton1">Dietary & Nutritional Information</button>
+            <button class="botton1">Packaging & Recycling</button>
+
+            
+
+            <button class="botton1">Managing My Subscription</button>
+            <button class="botton1">All Things App</button>
+            <button class="botton1">Managing an Order</button>
+            
+          
+            
+            <button class="botton1">Payment & Promotions</button>
+            <button class="botton1">Delivery & Shipping</button>
+            <button class="botton1">Technical Support</button>
+            
+            
+            
+            <button id="botton2">Our Commitment to Food Safety</button>
+
+        </div>
+        <div id="Promotedarticles">
+           <div>
+            <h3>Promoted articles</h3>
+           </div>
+            
+            
+<div class="child">
+
+    <a href="" class="ancunl">What's Get Meal?</a>
+    <a href="" class="ancunl">What should I know before I order?</a>
+    <a href="" class="ancunl">How much do your meal plans cost?</a>
+
+</div>
+            
+
+           <div class="child"> 
+            <a href="" class="ancunl">How many servings are in a meal?</a>
+            <a href="" class="ancunl">How do I heat up my meals?</a>
+            <a href="" class="ancunl">Do the meals have a use-by date, and can I freeze my meals?</a>
+</div>
+            
+
+           <div class="child">
+            <a href="" class="ancunl">Where are your meals cooked?</a>
+            <a href="" class="ancunl">What am I committing to with a subscription?</a>
+            <a href="" class="ancunl">What am I committing to with a subscription?</a>
+
+            
+           </div>
+
+           <div class="child">
+            <a href="" class="ancunl">Where do you deliver?</a>
+
+
+           </div>
+
+        </div>
+</body>
+</html>
