@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift</title>
+<style>
+
+yle>
+        #navbar{
+            overflow: hidden;
+        }
+        #navbar {
+        
+            display: flex;
+            justify-content: space-around;
+            height: auto;
+            background-color: #FAFAFA;
+            width: 100%;
+            position: fixed;
+            top:0;
+            padding-top: 0%;
+        }
+
+        #navbar>div>img {
+            width: 20%;
+            border-radius: 50px;
+            margin-top: 20px;
+            margin-left: -80px;
+            font-style: italic;
+
+        }
+
+        #navbar>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            color: white;
+            font-size: 20px;
+            margin-left: -300px;
+            margin-top: 50px;
+        }
+
+        #navbar>div>button:nth-child(1) {
+            border: none;
+            background-color: #FAFAFA;
+            color: black;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-left: -20px;
+
+        }
+
+        #navbar>div>button:nth-child(2) {
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-right: -100px;
+            padding: 10px;
+
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            color: rgb(14, 49, 245);
+
+        }
+
+   #image{
+    display: flex;
+
+    width: 100%;
+    justify-content: space-evenly;} 
+    #image>div:nth-child(1){
+font-size: 25px;
+width: 40%;
+height: 400px;
+padding-left: 40px;
+margin-top: 100px;
+
+    }
+    #image img{
+        width: 140%;
+    }
+    .button1{
+        width: 150px;
+        background-color: rgb(32,144,250);
+        border: none;
+        padding: 15px;
+        font-size: 20px;
+        color: white;
+    }
+    .button2{
+        width: 200px;
+        background-color: white;
+        border: 1px solid rgb(32,144,250);
+        padding: 15px;
+        font-size: 20px;
+        color: rgb(32,144,250);
+    }
+    #heading{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 80px;
+    }
+    #part1{
+        text-align: center;
+        font-size: 25px;
+    }
+    #part1>div{
+     text-align: center;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     width: 90%;
+     margin: auto;
+     
+    }
+    #part1 h5{
+     margin-bottom: -20px;
+    }
+    #part1 p{
+        margin-top: -25px;
+    }
+   #part1 button{
+    margin-top: 80px;
+    width: 150px;
+    padding: 15px;
+    border: none;
+    background-color: rgb(32,144,250);
+    font-size: 20px;
+    color: white;
+   }
+   #medal_part-4>div:nth-child(1){
+            text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+        #medal_part-4>div>img:nth-child(1){
+            width: 20%;
+            border-radius: 100px;
+            margin-top: 50px;
+        }
+        #medal_part-4>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        text-align: center;
+        gap: 20px;
+        margin-top: 50px;
+        color: teal;
+        }
+       .part-4-child img{
+        width: 100%;
+       }
+       #medal_part-4>div:nth-child(3){
+        text-align: center;
+       }
+       #medal_part-4 button{
+        color: white;
+        background-color: rgb(32,144,250);
+        border: none;
+        padding: 10px;
+       }
+
+   section {
+            max-width: 100%;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+             
+        }
+
+        .title {
+            font-size: 50px;
+            margin: 3rem 0rem;
+        }
+
+        .FAQ {
+            max-width: 80%;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgb(163, 159, 159);
+            cursor: pointer;
+        }
+
+        .question {
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .question h3 {
+            color: blue;
+        }
+
+        .answer p {
+            padding-top: 1rem;
+            line-height: 1.6;
+            font-size: 20px;
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.4s ease;
+        }
+
+        .FAQ.active .answer {
+            max-height: 300px;
+            animation: fade 1s ease-in-out;
+
+        }
+        .FAQ.active svg{
+            transform: rotate(180deg);
+        }
+        svg{
+            transform: transition 0.5s ease-in;
+        }
+        #footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        margin: auto;
+        width: 80%;
+        margin-top: 50px;
+       }
+       #footer img{
+        width: 20%;
+       }
+       #footer a {
+            float:inline-end;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        #footer h5{
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+
+    <div id="navbar">
+        <div>
+            <img src="png2jpg/GET.jpg" alt="logo">
+        </div>
+        <div>
+            <a href="plan&menu.html">Plans & Menu</a>
+            <a href="how it.html">How it Works</a>
+            <a href="gift.html">Gifts</a>
+            <a href="">Refer a Friend</a>
+            <a href="help.html">Help</a>
+        </div>
+        <div>
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </div>
+    <div id="image">
+        <div class="imagechild">
+            <h1>Enjoy the Gift of Effortless Meals</h1>
+            <button class="button1">buy gift card</button> 
+            <br><br>
+            <button class="button2">redeem gift card</button>
+        </div>
+        <div>
+            <img src="https://img.freepik.com/free-photo/flat-lay-batch-cooking-composition_23-2148765597.jpg?" alt="">
+
+       
+        </div>
+        
+
+</div>
+<div id="heading">
+    <h2>Give the Greatest Gift Ever</h2>
+    <h5>(Yes, It's Freshly.)</h5>
+</div>
+<!-- here is the steps -->
+<div id="part1">
+    <div>
+        <div>
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/6268348095d1df7966f8012b_Gift_Illo_1.png" alt="">
+            <h5>step 1</h5>
+            <h4>You'll Choose the Amount</h4>
+            <p>Purchase a gift card for someone special and we’ll send it to them.</p>
+        
+        </div>
+        <div>
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/62683490d492cfe9d90dbd7a_Gift_Illo_2.png" alt="">
+        <h5>step 2</h5>
+        <h4>They'll Select Their Meals</h4>
+        <p>Your gift card's recipient will choose their meals and select their delivery day.</p>
+        </div>
+        <div>
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/6268349f5f123b16a40855f7_Gift_Illo_3.png" alt="">
+        <h5>step 3</h5>
+        <h4>We’ll Cook & Deliver</h4>
+        <p>We’ll prepare their meals and deliver them fresh—right to their door.</p>
+        </div>
+    </div>
+    <!-- quick tip -->
+
+    <h5>Quick Tip: a $50 gift card = 4 meals!</h5>
+    <h5>(on a 6-meal plan)</h5>
+    <button>buy gift card</button>
+    
+</div>
+<div id="medal_part-4">
+    <div>
+        <img src="png2jpg/GET.jpg" alt="">
+        <h1>Flexible plans that fit your life</h1>
+        <p>We offer anywhere from 4–12 meals per week, with meals
+             as low as $9.58 each. The bigger your box, the more you’
+            ll save—and you can always pause or change your plan at any time.</p>
+    </div>
+<div class="part-4-child">
+    <div>
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/62fb492937b0377ca6310cb0_4-5%20Meals-p-500.png" alt="">
+        <h1> 4-5 Meals</h1>
+    </div>
+    <div>
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/62fb492393696224964e1910_6-7%20Meals-p-500.png" alt="">
+        <h1>6-7 Meals</h1>
+    </div>
+    <div>
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/62fb492cddaec74cb5161350_8-9%20Meals-p-500.png" alt="">
+        <h1>8-9 Meals</h1>
+    </div>
+    <div>
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/62fb492794414230d9d0e1be_10-11%20Meals-p-500.png" alt="">
+        <h1>10-11 Meals</h1>
+    </div>
+    <div>
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/62fb4927a7912ad1a7770be8_12%20Meals-p-500.png" alt="">
+        <h1>12 Meals</h1>
+    </div>
+</div>
+<div>
+    <p>Shipping and tax added at checkout. Prices are rounded for your convenience.
+        Sign Up Now</p>
+    <button>Sign Up Now</button>
+</div>
+</div>
+<section>
+    <h1 class="title">
+        Common Questions
+
+    </h1>
+    <div class="FAQ">
+
+        <div class="question">
+            <h3>
+                How many servings are your meals?
+            </h3>
+
+            <svg width="15" heigth="10" Viewbox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke-width="7" stroke="white" stroke-linecap="round" />
+
+
+            </svg>
+        </div>
+        <div class="answer">
+            <p>
+                With a selection that spans nourishing breakfasts, lunches, and dinners, the majority of our meals
+                are single serving and perfectly sized for 1 person to enjoy at 1 sitting. We also offer multi-serve
+                proteins and sides, which are designed to feed multiple people for extra mealtime flexibility. These
+                delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even
+                build an entire meal—the choice is yours!
+
+                We offer anywhere from 4–12 meals per week, with meals as low as $8.99 each—and you always have the
+                freedom to flex your number of meals up each week to add on breakfast items*, which are unlocked
+                upon your second order. On average, our meals weigh in at about 13 ounces and range from 300 to 650
+                calories. If you have a larger household, we do offer a 12 meal per week subscription (it’s ideal
+                for couples or a family of 4 looking for 3 meals per week). Plus, you can always order multiple
+                subscriptions. We may be biased, but there’s no better feeling than a fridge full of Freshly!
+
+                *Each breakfast item counts towards your 12-meal maximum
+            </p>
+        </div>
+    </div>
+    <div class="FAQ">
+
+        <div class="question">
+            <h3>
+                Do you accommodate dietary preferences?
+            </h3>
+
+            <svg width="15" heigth="10" Viewbox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke-width="7" stroke="white" stroke-linecap="round" />
+
+
+            </svg>
+        </div>
+        <div class="answer">
+            <p>
+                We accommodate a variety of dietary preferences, including gluten-free, dairy-free, peanut-free,
+                plant-based, low-calorie, and carb-conscious options. As a customer, you can set your own dietary
+                preferences and easily find the meals that work for you (learn more here). You can also check out
+                individual ingredient lists for each dish if you have specific concerns.
+
+                If you’re unable to place an order that fits your preferences now, be sure to check back frequently
+                as we’re always adding new and exciting dishes.
+                ‍
+                ‍Please note: We always recommend consulting your physician or nutritionist if you have any specific
+                health concerns.
+            </p>
+        </div>
+    </div>
+    <div class="FAQ">
+
+        <div class="question">
+            <h3>
+                How long do the meals last?
+            </h3>
+
+            <svg width="15" heigth="10" Viewbox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke-width="7" stroke="white" stroke-linecap="round" />
+
+
+            </svg>
+        </div>
+        <div class="answer">
+            <p>
+                Our meals are chef prepared and delivered fresh, so typically they have a refrigerated shelf life of
+                about 3-5 days. Select items (such as seafood) are best eaten first, so we’ll add a badge on the
+                package to let you know. We usually suggest enjoying these meals within the first few days of
+                receiving your order, but you can always check their exact use-by date on the back-of-pack nutrition
+                label. If you’re ever unable to finish your meals within their shelf life, you can always pop them
+                into the freezer for extended storage. Just be sure to microwave your meal straight from the freezer
+                and add a few extra minutes to reach the 165° F internal temperature we recommend.
+            </p>
+        </div>
+    </div>
+    <div class="FAQ">
+
+        <div class="question">
+            <h3>
+                How do I heat up my meals?
+            </h3>
+
+            <svg width="15" heigth="10" Viewbox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke-width="7" stroke="white" stroke-linecap="round" />
+
+
+            </svg>
+        </div>
+        <div class="answer">
+            <p>
+                Your meals will come to you fully prepared so you just have to heat ‘em up in the microwave. On the
+                back of each meal, you’ll find our easy steps for heating, but generally, the meals heat up in about
+                3 minutes (depending on your microwave). If you’re unsure, start at 2 minutes and heat in 30–second
+                increments until the meal reaches an inner temperature of 165° F. Our meals are packaged to be
+                heated in the microwave (for the ultimate convenience), but you can heat them in the oven if you’d
+                like. Just so you know, our current meal containers aren’t safe for the oven or stovetop, so you’ll
+                have to transfer your food to heat it up. You can check out the full oven reheat directions in our
+                FAQs.
+            </p>
+        </div>
+    </div>
+    <div class="FAQ">
+
+        <div class="question">
+            <h3>
+                How does shipping work?
+            </h3>
+
+            <svg width="15" heigth="10" Viewbox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke-width="7" stroke="white" stroke-linecap="round" />
+
+
+            </svg>
+        </div>
+        <div class="answer">
+            <p>
+                To help guarantee your meals arrive in the freshest condition, there is a small shipping fee
+                associated with your order. We deliver to all states within the continental U.S., and our shipping
+                partners offer delivery every day of the week. The exact days that we can reach you will depend on
+                your ZIP code and the carrier delivering your Freshly meals. Whether you're signing up or updating
+                your typical delivery day, we'll show you all the days available to you so you can choose what's
+                best for you.
+            </p>
+        </div>
+    </div>
+    <div class="FAQ">
+
+        <div class="question">
+            <h3>
+                How does subscription work? </h3>
+
+            <svg width="15" heigth="10" Viewbox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke-width="7" stroke="white" stroke-linecap="round" />
+
+
+            </svg>
+        </div>
+        <div class="answer">
+            <p>
+                Every week you get to pick your selection of meals from our weekly rotation of 35+ options. Choose
+                any number of meals between 4 and 12 per week, with meals as low as $9.58 each. You'll pick the most
+                convenient delivery day for you, and we'll ship your chef-cooked meals right to your doorstep! If
+                you ever need to skip or cancel a week, or size your order up or down, it's easy to make changes to
+                your upcoming delivery before the weekly deadline.
+            </p>
+        </div>
+    </div>
+</section>
+<br><br><br>
+<hr>
+<div id="footer">
+    <div>
+        <img src="png2jpg/GET.jpg" alt="">
+        <p>@Get Meal lnc.</p>
+    </div>
+    <div>
+        <h5>Company</h5>
+      <a href="">Careers</a>
+      <a href="">Contact Us</a>  
+      <a href="">Press</a>  
+      <a href="">Terms</a>  
+      <a href="">Privacy</a> 
+      <a href="">Affiliates</a> 
+      <a href="">Partnerships</a>   
+ 
+ </div>
+    <div>
+        <h5>Learn More</h5>
+        <a href="plan&menu.html">Plans & Menu</a> 
+        <a href="">Why Freshly?</a> 
+        <a href="">Gifts</a>
+        <a href="">FAQs</a> 
+        <a href="">Blog</a> 
+        
+        <a href="">Students</a> 
+    </div>
+    <div>
+        <h5>Join Us</h5>
+        <div class="icon">
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bbc67c09879c5a19b_5d795c37fedbb6017d824b02_icons8-facebook-old-30.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423ad92101de48f410c7_5d10dfc0ef515f74b875a42c_icons8-instagram-50.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bd050163202b341e8_5d10dfc00442bfc99d3d6828_icons8-twitter-filled-50.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423a6b26e039d505425e_5d10dfbfef515faad975a42b_icons8-pinterest-filled-50.jpg" alt="">
+            </div>
+        </div>
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d643dd558306bfe1df5ef8b_google-play-badge.png" alt="">
+        <br>
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d6439d4fb92e7630e46976b_Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="">
+    </div>
+</div>
+</body>
+</html>
+<script>
+    
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+       let faqs = document.querySelectorAll(".FAQ");
+    faqs.forEach((faq) => {
+        faq.addEventListener("click", () => {
+            faq.classList.toggle("active");
+        });
+        
+    });
+</script>

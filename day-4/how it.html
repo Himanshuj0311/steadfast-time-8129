@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+     #navbar{
+            overflow: hidden;
+        }
+        #navbar {
+        
+            display: flex;
+            justify-content: space-around;
+            height: auto;
+            background-color: #FAFAFA;
+            width: 100%;
+            position: fixed;
+            top:0;
+            padding-top: 0%;
+        }
+
+        #navbar>div>img {
+            width: 20%;
+            border-radius: 50px;
+            margin-top: 20px;
+            margin-left: -80px;
+            font-style: italic;
+
+        }
+
+        #navbar>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            color: white;
+            font-size: 20px;
+            margin-left: -300px;
+            margin-top: 50px;
+        }
+
+        #navbar>div>button:nth-child(1) {
+            border: none;
+            background-color: #FAFAFA;
+            color: black;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-left: -20px;
+
+        }
+
+        #navbar>div>button:nth-child(2) {
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-right: -100px;
+            padding: 10px;
+
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            color: rgb(14, 49, 245);
+
+        }
+
+    #video {
+        text-align: center;
+        margin-top: 100px;
+
+    }
+
+    #video h1 {
+        font-size: 80px;
+        margin-bottom: 100px;
+    }
+
+    #video h2 {
+        font-size: 50px;
+    }
+
+    #video p {
+        font-size: 20px;
+        margin-top: -30px;
+    }
+
+    #ourfood>div {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 72%;
+        margin: auto;
+        margin-right: 10%;
+    }
+
+
+    #heading {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 150px;
+        margin-top: 150px;
+
+    }
+
+    #ourfood img {
+        width: 50%;
+    }
+
+    #ourfood button {
+        text-align: center;
+        background-color: rgb(32, 144, 250);
+        padding: 15px;
+
+        margin-left: 43%;
+        margin-top: 20px;
+        width: 150px;
+        border: none;
+
+
+    }
+
+    #opation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+        margin: auto;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    #opation>div:nth-child(2) {
+        width: 80%;
+    }
+    #opation>div:nth-child(4) {
+        width: 80%;
+    }
+    #opation>div:nth-child(6) {
+        width: 80%;
+    
+    }
+    #seemenu{
+        height: 180px;
+        text-align: center;
+        padding-top: 5%;
+        margin-top: 30px;
+    }
+    #seemenu button{
+    padding: 10px;
+    background-color: rgb(32, 144, 250);
+    border: none;
+    width: 200px;
+    color: white;
+    font-size: 18px;
+    margin-top: 50px;
+
+    }
+    #work{
+        text-align: center;
+        margin-top: 50px;
+    }
+    #work>div:nth-child(2){
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+
+    }
+    #work img{
+        width: 70%;
+    }
+    #work p{
+        margin-top: -15px;
+        margin-bottom:70px ;
+    }
+   .button{
+    padding: 15px;
+    width: 150px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(32, 144, 250);
+    margin-top:30px ;
+   }
+   #Choosegetmeal{
+    text-align: center;
+
+   }
+   #Choosegetmeal>div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+   }
+   #Choosegetmeal img{
+    width: 80%;
+   }
+   #Choosegetmeal>div:nth-child(1){
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+   }
+   #Choosegetmeal button{
+    border: none;
+    background-color: rgb(32, 144, 250);
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+   }
+   #lastpart{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(224, 218, 218);
+    margin-top: 50px;
+    width: 100%;
+    height: 250px;
+    padding-top: 50px;
+   }
+   #lastpart button{
+   
+    border: none;
+    background-color: rgb(32, 144, 250);
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+   
+   }
+   #footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        margin: auto;
+        width: 80%;
+       }
+       #footer img{
+        width: 20%;
+       }
+       #footer a {
+            float:inline-end;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        #footer h5{
+            text-align: center;
+        }
+    
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How it work</title>
+</head>
+
+<body>
+      <!-- Navbar  -->
+      <div id="navbar">
+        <div>
+            <img src="png2jpg/GET.jpg" alt="logo">
+        </div>
+        <div>
+            <a href="plan&menu.html">Plans & Menu</a>
+            <a href="how it.html">How it Works</a>
+            <a href="gift.html">Gifts</a>
+            <a href="">Refer a Friend</a>
+            <a href="help.html">Help</a>
+        </div>
+        <div>
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </div>
+    <div id="video">
+        <h1>About Freshly</h1>
+        <div>
+            <h2>Heat-and-eat in 3 minutes or less
+            </h2>
+            <p>See just how easy it is to prepare a chef-cooked Freshly meal</p>
+            <video width="70%" height="50%" controls>
+                <source src="pexels-taryn-elliott-7172269.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+    <div id="heading">
+        <h1>Our Food Philosophy</h1>
+        <p>Our meals aren’t just ready in minutes... or just delicious... or just nutritious. They’re all three.</p>
+    </div>
+    <div id="ourfood">
+        <div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5ec28f0020df16335dbda1b6_gp-less-sugar-nocopy%402x.png"
+                    alt="">
+                <h2>Less sugar</h2>
+                <p>Sweet, naturally</p>
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5ec28f00f6ed944c5e2f02a3_gp-less-processed-nocopy%402x.png"
+                    alt="">
+                <h2>Less processed</h2>
+                <p>Only thoughtful ingredients</p>
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5ec28f00a02e38947ec7759a_gp-more-nutrients-nocopy%402x.png"
+                    alt="">
+                <h2>More nutrients</h2>
+                <p>Simple swaps and sneaky veggies</p>
+            </div>
+        </div>
+        <button>Learn More</button>
+    </div>
+    <div id="opation">
+        <div>
+            <img src="https://imgs.search.brave.com/DmfwZoXs4FrcoRE9Gn7yUxXT1eJMHHSDVcjEkdtUhaM/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/bC1zVXJ0aDBrYkxx/Y3FhQWg2ZnpBSGFF/byZwaWQ9QXBp"
+                alt="">
+        </div>
+        <div>
+            <h1>Delicious Gluten-Free Options</h1>
+            <p>Freshly offers a host of gluten-free meals, so you can avoid gluten without skimping on variety or great
+                taste.</p>
+            <a href="">Learn more</a>
+        </div>
+        <div>
+            <img src="https://imgs.search.brave.com/XcMO3h5mlHuUXJFRnEsloZOwJotrZcwfb5TVLg1jJq8/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/cGs1QkQ0TlRYMXpt/SVQ5RmdBVHpnSGFF/byZwaWQ9QXBp"
+                alt="">
+        </div>
+        <div>
+            <h1>Smart Nutrition</h1>
+            <p>Freshly chefs use clever swaps and sneaky veggies to craft meals with unexpected twists—so every bite is
+                as nutritious as it is delicious.</p>
+            <a href="">Learn more</a>
+        </div>
+        <div>
+            <img src="https://imgs.search.brave.com/SxJKsP0YljtnME6sqHe6bMNelmXHrQuv3GdbGH_iExk/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5J/bFh4TjVINWxZNFlr/M24wTnhhQkV3SGFF/byZwaWQ9QXBp"
+                alt="">
+        </div>
+        <div>
+            <h1>Introducing: Purely Plant</h1>
+            <p>Our Purely Plant lineup offers seriously satisfying meals featuring our new plant-based protein.</p>
+            <a href="">Learn more</a>
+        </div>
+    </div>
+    <div id="seemenu" style="background-image: url('pexels-ella-olsson-1640777.png');">
+       <a href="plan&menu.html"> <button>See our plans & menu</button></a>
+    </div>
+
+    <div id="work">
+        <div>
+        <h1>How Freshly Works</h1>
+        <p>We’re always hard at work making the Freshly experience easier for our customers.</p>
+        </div>
+        <div id="workchild">
+            <div>
+                <img src="5d7ffdc4d863541cac775fa4_Heat your meal-p-500.png" alt="">
+                <h3>How to Heat Freshly Meals</h3>
+            </div>
+            <div>
+                <img src="2.png" alt="">
+                <h3>How to Change Your Freshly Meals</h3>
+            </div>
+            <div>
+                <img src="3.png" alt="">
+                <h3>How to Recycle Freshly Packaging</h3>
+            </div>
+        </div>
+        <button class="button">Learn more</button>
+
+    </div>
+ <div id="Choosegetmeal">
+  
+        <div>
+            <h1>Why Choose Get Meal?</h1>
+        <p>When it comes to meal-time, you’ve got a lot of options. Some offer convenience, some offer nutrition, and some offer the foods you crave. We offer all three.</p>
+        </div>
+    
+    <div>
+        <div>
+           <img src="https://imgs.search.brave.com/R8MglADT4VDZvs_VQR8rZL0-PbMv_4N9jsGjeOKRYqQ/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC52/Rl9kS09FbjZmeE9s/Q243MmhWWXRBSGFF/SyZwaWQ9QXBp" alt="">
+           <h3> Why the  Get Meal is Better Then Meal Kits</h3> 
+        </div>
+        <div>
+            <img src="https://imgs.search.brave.com/UnEGoKgJgrML84CHrmTsIJMjubGMLh0i7Rvz7kRqe_o/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC43/dWFRZHdIQnViXzU5/NzRsR0xRbUVBSGFF/byZwaWQ9QXBp" alt="">
+            <h3>
+                Why the  Get Meal is Better Then Cooking
+            </h3>
+        </div>
+        <div>
+            <img src="https://imgs.search.brave.com/KyU8wixzlwUOn9vYGsqUQozQD7DZKIodFu4jEErHSpc/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC40/WEE3UlVaWUdCTUJU/MU1MV2I1LTl3SGFF/SyZwaWQ9QXBp" alt="">
+            <h3>There Reasons to Leave Tekeout For Get Meal</h3>
+        </div>
+    </div>
+    <button>Learn More</button>
+ </div>
+ <div id="lastpart">
+    <h1>Ready to live Get Meal?</h1>
+  <a href="singup.html">  <button> Get Started</button></a>
+ </div>
+
+   <!-- footer section -->
+<div id="footer">
+    <div>
+        <img src="png2jpg/GET.jpg" alt="">
+        <p>@Get Meal lnc.</p>
+    </div>
+    <div>
+        <h5>Company</h5>
+      <a href="">Careers</a>
+      <a href="">Contact Us</a>  
+      <a href="">Press</a>  
+      <a href="">Terms</a>  
+      <a href="">Privacy</a> 
+      <a href="">Affiliates</a> 
+      <a href="">Partnerships</a>   
+ 
+ </div>
+    <div>
+        <h5>Learn More</h5>
+        <a href="plan&menu.html">Plans & Menu</a> 
+        <a href="">Why Freshly?</a> 
+        <a href="">Gifts</a>
+        <a href="">FAQs</a> 
+        <a href="">Blog</a> 
+        
+        <a href="">Students</a> 
+    </div>
+    <div>
+        <h5>Join Us</h5>
+        <div class="icon">
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bbc67c09879c5a19b_5d795c37fedbb6017d824b02_icons8-facebook-old-30.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423ad92101de48f410c7_5d10dfc0ef515f74b875a42c_icons8-instagram-50.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423bd050163202b341e8_5d10dfc00442bfc99d3d6828_icons8-twitter-filled-50.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f52423a6b26e039d505425e_5d10dfbfef515faad975a42b_icons8-pinterest-filled-50.jpg" alt="">
+            </div>
+        </div>
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d643dd558306bfe1df5ef8b_google-play-badge.png" alt="">
+        <br>
+        <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d6439d4fb92e7630e46976b_Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="">
+    </div>
+</div>
+
+</body>
+
+</html>
+<script>
+    window.onscroll = function () { myFunction() };
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+</script>
